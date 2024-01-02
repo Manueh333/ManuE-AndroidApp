@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.manucloud.manue_kotlin.MainActivity">
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        custom:JV_autoReCenterButton="true"
+        custom:JV_backgroundColor="?android:attr/colorBackground"
+        custom:JV_borderColor="?attr/colorPrimaryDark"
+        custom:JV_borderWidth="4dp"
+        custom:JV_buttonColor="?attr/colorTertiary"
+        custom:JV_buttonSizeRatio="15%"
+        custom:JV_fixedCenter="true"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.496"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="32dp"
+        android:text="@string/BtnConnect"
+        android:textSize="14sp"
+        app:icon="@drawable/baseline_link_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+
+        android:layout_marginEnd="32dp"
+        android:text="@string/BtnDisconnect"
+        android:textSize="14sp"
+        app:icon="@drawable/baseline_link_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/proModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        app:layout_constraintBottom_toTopOf="@+id/joystickView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pro"
+        app:layout_constraintBottom_toTopOf="@+id/proModeSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

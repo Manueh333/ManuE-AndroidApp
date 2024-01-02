@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Manu-E</string>
+    <string name="waitText">Waiting for devices...</string>
+    <string name="BtnConnect">Connect</string>
+    <string name="BtnDisconnect">Disconnect</string>
+    <string name="angleText">Angle: %d</string>
+    <string name="strengthText">Strength: %d</string>
+    <string name="disconnectText">Manu-E disconnected...</string>
+    <string name="portClosed">Port is closed</string>
+    <string name="portNull">Port is null</string>
+    <string name="successfulConnection">Manu-E successfully connected!</string>
+    <string name="permissionFail">Permission Error</string>
+    <string name="app_title">USB Serial For Android Example</string>
+    <string name="devices">USB Devices</string>
+    <string name="led_on">LED On</string>
+    <string name="conected">Connected!</string>
+    <string name="empty"></string>
+    <string name="up">up</string>
+    <string name="down">down</string>
+    <string name="stop">stop</string>
+    <string name="right">right</string>
+    <string name="left">left</string>
+    <string name="pro">Pro</string>
+</resources>
